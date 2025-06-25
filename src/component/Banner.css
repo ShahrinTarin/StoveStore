@@ -1,0 +1,85 @@
+.banner {
+  width: 100vw; /* Full viewport width */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.banner .swiper {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+
+.banner-slide {
+  position: relative; 
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+
+.banner-content {
+  position: absolute; 
+  top: 35%;
+  left: 6%;
+  z-index: 20;
+  max-width: 90%; 
+ 
+}
+
+.banner-content h1 {
+  margin-bottom: 1rem;
+ 
+}
+
+.banner-content p {
+  color: #4b5563; 
+}
+
+.banner-content button {
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-image {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensures image covers the slide */
+  object-position: center; /* Center the image */
+}
+
+.glassy-navbar {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  margin: 0 auto; 
+  
+  padding: 2.5rem 7rem;
+  border-radius: 15px;
+}
+
+
+.glassy-navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+@media (max-width: 500px){
+  .glassy-navbar { 
+  margin: 0 auto; 
+  z-index: 10;
+  padding: 0;
+  }
+  .banner-content {
+  top: 15%;
+  left: 6%;
+ padding: 8px;
+}
+}
+@media (max-width: 1120px) and (min-width:500px){
+  .glassy-navbar { 
+  margin: 0 auto; 
+  z-index: 10;
+  padding: 1rem 3rem;
+  }
+}
