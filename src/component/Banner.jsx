@@ -57,19 +57,21 @@ const Banner = () => {
 
                             
 
-                            <div className="banner-content space-y-4">
+                            <div className="banner-content flex flex-col justify-center  space-y-2 ">
                                 <Fade delay={200}
                                     duration={2500} >
                                     <h1 className='text-gray-700 text-3xl lg:text-5xl font-semibold flex'>Ready To Try Something  Delicious Recipes Today? </h1>
                                     <p className='text-gray-600 font-normal w-10/12 md:w-8/12 text-[10px] lg:text-[14px]'>Join us on a flavorful journey around the world as we explore new dishes, discover exciting recipes, and bring bold, delicious tastes into your kitchen—one unforgettable  bite at a time. From spicy street food to comforting home-style meals, each recipe celebrates culture, creativity, and passion for cooking. Whether  you're a seasoned chef or just getting started, there's always something new and delicious waiting to be discovered. Let’s cook, taste, and travel together!</p>
                                 </Fade>
-                                <Link to='/allrecipes' className="cursor-pointer px-5 py-2.5 lg:mt-5 relative rounded group text-white font-medium inline-block">
+                              <div>
+                                  <Link to='/allrecipes' className="cursor-pointer px-5 py-2.5 lg:mt-5  relative rounded group text-white font-medium inline-block">
                                     <span className="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-gray-600 to-blue-500"></span>
                                     <span className="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-gray-600 to-blue-500"></span>
                                     <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-gray-600 to-blue-500"></span>
                                     <span className="absolute inset-0 w-full h-full transition duration-200 ease-out rounded bg-gradient-to-br to-gray-600 from-blue-500"></span>
                                     <span className="relative">Explore Recipes </span>
                                 </Link>
+                              </div>
                             </div>
 
                         </div>

@@ -8,7 +8,7 @@ const CardContainer = ({ initialRecipes }) => {
         <div className='pb-20'>
 
 
-            <div className='grid grid-cols-1 p-12 lg:grid-cols-3 md:grid-cols-2 gap-4 gap-y-8 w-11/12 mx-auto'>
+            <div className='grid grid-cols-1 p-12 lg:grid-cols-4 md:grid-cols-2 gap-4 gap-y-8 w-11/12 mx-auto'>
                 {
                     initialRecipes.map(recipe => <RecipeCard key={recipe._id} recipe={recipe}></RecipeCard>)
                 }

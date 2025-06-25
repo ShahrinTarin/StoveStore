@@ -5,7 +5,7 @@ import { AuthContext } from '../provider/AuthProvider';
 import Swal from 'sweetalert2'
 import { FaEye } from 'react-icons/fa6';
 import { FaEyeSlash } from 'react-icons/fa';
-import Navbar from '../component/Navbar';
+
 
 const Login = () => {
    
@@ -75,7 +75,7 @@ const Login = () => {
     return (
 
         <div>
-            <Navbar></Navbar>
+           
 
            <div className='px-3'>
              <div className="w-full max-w-md mx-auto p-8 mt-8 md:mt-16 space-y-3 rounded-xl bg-gray-600 text-gray-100 mb-5 shadow-2xl">

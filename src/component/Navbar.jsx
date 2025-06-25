@@ -42,7 +42,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar z-1000 relative shadow-md md:px-8 lg:px-12 bg-transparent backdrop-blur-2xl">
+        <div className="navbar sticky top-0 z-1000  shadow-md md:px-8 lg:px-12 bg-transparent backdrop-blur-2xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost mr-2 lg:hidden">
@@ -53,14 +53,18 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-sm z-1100 dropdown-content bg-blue-50 dark:bg-gray-800 rounded-box mt-3 w-52 p-2 shadow">
                         {links}
                         <li>{
-                    !user ? <div className='space-x-2 lg:space-x-4'>
-                        <NavLink to='/login' className="text-gray-900 dark:text-gray-900 bg-blue-100 btn font-semibold">Login</NavLink>
-                        <NavLink to='/register' className="text-gray-900 dark:text-gray-900 bg-blue-100 btn font-semibold">Register</NavLink>
-                    </div>:' '
-                }</li>
+                            !user ? <div className='space-x-2 lg:space-x-4'>
+                                <NavLink to='/login' className="text-gray-900 dark:text-gray-900 bg-blue-100 btn font-semibold">Login</NavLink>
+                                <NavLink to='/register' className="text-gray-900 dark:text-gray-900 bg-blue-100 btn font-semibold">Register</NavLink>
+                            </div> : ' '
+                        }</li>
                     </ul>
                 </div>
-                <NavLink to='/' className="text-2xl lg:text-3xl font-bold"><span className='text-blue-600'>Stove</span><span className='text-gray-500'>Stories</span></NavLink>
+                <NavLink to='/' className="text-2xl lg:text-3xl font-bold"><div className="l font-bold flex items-center gap-2">
+                    <span className="text-amber-600">🔥</span>
+                    <span className="text-blue-600">Stove</span>
+                    <span className="text-gray-500">Stories</span>
+                </div></NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu gap-5 menu-horizontal px-1">

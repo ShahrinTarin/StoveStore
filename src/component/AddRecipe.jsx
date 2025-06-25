@@ -1,5 +1,5 @@
 import React, { use } from 'react';
-import Navbar from './Navbar';
+
 import Swal from 'sweetalert2';
 import { AuthContext } from '../provider/AuthProvider';
 
@@ -59,7 +59,7 @@ const bdTime = new Date().toLocaleString('en-GB', {
     return (
 
         <div>
-            <Navbar></Navbar>
+            
 
             <div className='my-12 w-11/12 mx-auto'>
                 <div className='mb-8 text-center space-y-4'>

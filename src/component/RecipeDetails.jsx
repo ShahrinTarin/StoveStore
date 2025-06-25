@@ -1,5 +1,4 @@
 import React, { use, useState } from 'react';
-import Navbar from './Navbar';
 import { useLoaderData } from 'react-router';
 import { AiOutlineLike } from 'react-icons/ai';
 import Swal from 'sweetalert2';
@@ -54,7 +53,6 @@ const RecipeDetails = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
             <div className="card dark:bg-gray-700 bg-blue-50 text-gray-600 dark:text-white  shadow-sm my-10 md:w-8/12 w-10/12 lg:w-5/12  mx-auto">
                 <figure className='w-full h-[300px]'>
                     <img src={image}

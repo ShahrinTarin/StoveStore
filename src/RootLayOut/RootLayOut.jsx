@@ -13,6 +13,7 @@ const RootLayOut = () => {
    <>
     <ThemeProvider>
       <div className='bg-white dark:bg-gray-900'>
+        <Navbar></Navbar>
       <main className='min-h-[calc(100vh-270px)] '>
         {state == 'loading' ? <Loader></Loader> : <Outlet></Outlet>}
       </main>

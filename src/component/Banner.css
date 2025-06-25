@@ -7,13 +7,13 @@
 
 .banner .swiper {
   width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
+  height: 70vh; 
 }
 
 .banner-slide {
   position: relative; 
   width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
+  height:50vh; /* Full viewport height */
 }
 
 .banner-content {
@@ -63,7 +63,13 @@
   align-items: center;
   justify-content: space-between;
 }
- 
+@media (max-width: 768px) {
+  .banner-swiper {
+  height: 100vh;
+  }
+}
+
+
 @media (max-width: 500px){
   .glassy-navbar { 
   margin: 0 auto; 

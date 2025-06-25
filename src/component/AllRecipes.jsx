@@ -1,23 +1,40 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from './Navbar';
+
 import RecipeCard from './RecipeCard';
 
 const AllRecipes = () => {
     const [initialRecipes, setInitialRecipes] = useState([])
+    const [sortOrder, setSortOrder] = useState('');
     console.log(initialRecipes);
-    const [search, setSearch] = useState(' ')
+    const [search, setSearch] = useState('')
     useEffect(() => {
-        fetch(`https://assignment-10-server-blond-ten.vercel.app/recipe?searchParams=${search}`)
+        fetch(`https://assignment-10-server-blond-ten.vercel.app/recipe?searchParams=${search}&sort=${sortOrder}`)
             .then(res => res.json())
             .then(data => setInitialRecipes(data))
-    }, [search])
+    }, [search, sortOrder])
     return (
         <div className='mb-12'>
-            <Navbar></Navbar>
+
             <div>
                 <div className='mb-3 md:flex justify-between w-11/12 md:pl-12 pl-5  mx-auto space-y-4 mt-8'>
                     <h1 className=" text-3xl lg:text-5xl font-semibold dark:text-gray-300 text-gray-700">All <span className='text-blue-800'>Toothsome Recipes Here</span></h1>
-                    <div>
+                    <div className='flex gap-2'>
+                        <select
+                            name="sort"
+                            value={sortOrder}
+                            onChange={(e) => setSortOrder(e.target.value)}
+                            className="w-full bg-blue-100 p-2.5 px-5 rounded input text-gray-800 appearance-none md:pr-8"
+                            style={{
+                                backgroundImage: `url("data:image/svg+xml;utf8,<svg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")`,
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'right 10px center',
+                            }}
+                        >
+                            <option value="">Sort By</option>
+                            <option value="asc">Title A - Z</option>
+                            <option value="desc">Title Z - A</option>
+                            <option value="likes">Most Likes</option>
+                        </select>
                         <select
                             name="cuisine"
                             value={search}

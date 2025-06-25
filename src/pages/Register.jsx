@@ -5,7 +5,7 @@ import { AuthContext } from '../provider/AuthProvider';
 import Swal from 'sweetalert2'
 import { FaEye } from 'react-icons/fa6';
 import { FaEyeSlash } from 'react-icons/fa';
-import Navbar from '../component/Navbar';
+
 
 const Register = () => {
     const { createUser, setUser, googleLogIn, updateUser } = use(AuthContext)
@@ -106,7 +106,7 @@ const Register = () => {
     }
     return (
         <div>
-            <Navbar></Navbar>
+       
            <div className='px-3'>
              <div className="w-full mb-5 max-w-lg mt-8 md:mt-16 mx-auto p-8 space-y-3 rounded-xl bg-gray-600 text-gray-100 shadow-2xl">
                 <h1 className="text-2xl font-bold text-center">Register Your Account</h1>
