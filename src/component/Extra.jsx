@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const Extra = () => {
     return (
-        <div className='mx-auto w-11/12 rounded-2xl py-10 lg:py-20 mt-12 mb-36 text-center bg-white dark:bg-gray-400'>
+        <div className='mx-auto px-4 w-11/12 rounded-2xl py-10 lg:py-20 mt-12 mb-36 text-center bg-white dark:bg-gray-400'>
             <h1 className="text-5xl font-medium mb-5 text-gray-700">Explore Recipe Categories</h1>
             <div className='grid md:grid-cols-3 lg:grid-cols-5 max-w-7xl mx-auto justify-center gap-6 mt-8'>
 

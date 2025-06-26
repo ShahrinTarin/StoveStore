@@ -9,7 +9,7 @@ import Extra from '../component/Extra';
 const Home = () => {
     const initialRecipes = useLoaderData()
     return (
-        <div className='bg-blue-50 dark:bg-gray-500'>
+        <div className='bg-blue-50 dark:bg-gray-900'>
             <div>
                 <Banner></Banner>
                 {/* <div className="absolute top-0 md:top-10 left-0 w-full">
