@@ -74,11 +74,11 @@ const Login = () => {
 
     return (
 
-        <div>
+        <div className='w-full grid items-center bg-[url(https://i.ibb.co/jPSL9rX3/login.jpg)] h-screen bg-cover bg-no-repeat'>
            
 
-           <div className='px-3'>
-             <div className="w-full max-w-md mx-auto p-8 mt-8 md:mt-16 space-y-3 rounded-xl bg-gray-600 text-gray-100 mb-5 shadow-2xl">
+           <div className='w-full '>
+             <div className="w-full flex-1 max-w-md mx-auto p-8 space-y-3 rounded-xl backdrop-blur-md bg-transparent border-2 text-gray-100 mb-5 shadow-2xl">
           
             <h1 className="text-2xl font-bold text-center">Login</h1>
             <form onSubmit={handleLogIn} className="space-y-2">
