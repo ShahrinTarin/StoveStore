@@ -42,7 +42,7 @@ const DashboardLayout = () => {
         <div className="drawer-side dark:bg-gray-900">
           <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
 
-          <aside className="lg:fixed py-20 top-0 left-0 w-64 h-screen dark:bg-gray-800 bg-white text-gray-800 p-6 shadow-lg flex flex-col space-y-8 overflow-y-auto z-50">
+          <aside className="lg:fixed lg:py-20 top-0 left-0 w-64 h-screen dark:bg-gray-800 bg-white text-gray-800 p-6 shadow-lg flex flex-col space-y-8 overflow-y-auto z-50">
             {/* Mobile close button */}
             <div className="lg:hidden flex justify-end mb-4">
               <label
