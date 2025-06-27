@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiFillInstagram } from 'react-icons/ai';
-import { IoLogoFacebook } from 'react-icons/io';
+import { IoLogoFacebook, IoLogoGithub } from 'react-icons/io';
 import { MdAttachEmail } from 'react-icons/md';
 import { NavLink } from 'react-router'; // ✅ Fix: use react-router-dom not react-router
 
@@ -62,12 +62,15 @@ const Footer = () => {
           <div>
             <h3 className="uppercase font-semibold mb-4 tracking-wide text-gray-900 dark:text-gray-900">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61570044629513" target="_blank" rel="noreferrer" className="hover:text-blue-800 dark:hover:text-blue-400">
+              <a href="https://www.facebook.com/profile.php?id=61570044629513" target="_blank" rel="noreferrer" className="hover:text-blue-800 dark:hover:text-blue-800">
                 <i className="fab fa-facebook-f text-lg"></i><IoLogoFacebook size={22}/>
 
               </a>
-              <a href="https://www.instagram.com/_shahrin_tarin/" target="_blank" rel="noreferrer" className="hover:text-pink-500 dark:hover:text-pink-400">
+              <a href="https://www.instagram.com/_shahrin_tarin/" target="_blank" rel="noreferrer" className="hover:text-blue-800 dark:hover:text-blue-800">
                 <i className="fab fa-instagram text-lg"></i><AiFillInstagram size={22} />
+              </a>
+              <a href="https://github.com/ShahrinTarin" target="_blank" rel="noreferrer" className="hover:text-blue-800 dark:hover:text-blue-800">
+                <i className="fab fa-github text-lg"></i><IoLogoGithub size={22} />
               </a>
             </div>
           </div>
