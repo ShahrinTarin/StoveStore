@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import {
   FaListAlt, FaPlusCircle, FaUserAlt, FaBars, FaTimes,
-  FaChartPie, FaQuestionCircle, FaHandsHelping, FaInfoCircle
+  FaChartPie, FaQuestionCircle, FaHandsHelping, FaInfoCircle,
+  FaHome
 } from 'react-icons/fa';
 import { Link, Outlet } from 'react-router';
 import Navbar from '../component/Navbar';
@@ -14,7 +15,7 @@ const DashboardLayout = () => {
 
   return (
     <ThemeProvider>
-      <Navbar />
+     
 
       <div className="drawer lg:drawer-open dark:bg-gray-900">
         <input id="dashboard-drawer" type="checkbox" className="drawer-toggle" />
@@ -33,10 +34,8 @@ const DashboardLayout = () => {
             <Outlet />
           </main>
 
-          {/* Sticky footer */}
-          <footer className="mt-4">
-            <Footer />
-          </footer>
+          
+          
         </div>
 
         {/* Sidebar */}
@@ -75,13 +74,11 @@ const DashboardLayout = () => {
 
             {/* Navigation Links */}
             <nav className="flex flex-col space-y-3">
+              <SidebarLink to="/" icon={<FaHome />} label="Home" bg="bg-red-500" hover="hover:bg-red-600" />
               <SidebarLink to="/dashboard" icon={<FaChartPie />} label="Overview" bg="bg-[#eb3467]" hover="hover:bg-[#c42f57]" />
               <SidebarLink to="/dashboard/allrecipe" icon={<FaListAlt />} label="All Recipes" bg="bg-blue-600" hover="hover:bg-blue-700" />
               <SidebarLink to="/dashboard/myrecipes" icon={<FaUserAlt />} label="My Recipes" bg="bg-purple-600" hover="hover:bg-purple-700" />
               <SidebarLink to="/dashboard/addrecipe" icon={<FaPlusCircle />} label="Add Recipe" bg="bg-green-600" hover="hover:bg-green-700" />
-              <SidebarLink to="/dashboard/faq" icon={<FaQuestionCircle />} label="FAQ" bg="bg-yellow-500" hover="hover:bg-yellow-600" />
-              <SidebarLink to="/dashboard/support" icon={<FaHandsHelping />} label="Support" bg="bg-cyan-600" hover="hover:bg-cyan-700" />
-              <SidebarLink to="/dashboard/about" icon={<FaInfoCircle />} label="About Us" bg="bg-gray-600" hover="hover:bg-gray-700" />
             </nav>
           </aside>
         </div>
