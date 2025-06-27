@@ -25,30 +25,30 @@ const Navbar = () => {
 
     const links = <>
         <li><NavLink className={({ isActive }) =>
-            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-400 text-gray-600 hover:bg-gray-100'
+            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-300 text-gray-300 hover:bg-gray-100'
             }`} to='/'>Home</NavLink></li>
         <li><NavLink className={({ isActive }) =>
-            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-400 text-gray-600 hover:bg-gray-100'
+            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-300 text-gray-300 hover:bg-gray-100'
             }`} to='/support'>Support</NavLink></li>
         <li><NavLink className={({ isActive }) =>
-            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-400 text-gray-600 hover:bg-gray-100'
+            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-300 text-gray-300 hover:bg-gray-100'
             }`} to='/about'>About Us</NavLink></li>
         <li><NavLink className={({ isActive }) =>
-            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-400 text-gray-600 hover:bg-gray-100'
+            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-300 text-gray-300 hover:bg-gray-100'
             }`} to='/faq'> FAQ</NavLink></li>
         <li><NavLink className={({ isActive }) =>
-            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-400 text-gray-600 hover:bg-gray-100'
+            `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-300 text-gray-300 hover:bg-gray-100'
             }`} to='/allrecipes'>All Recipe</NavLink></li>
         {
             user && <>
                 <li><NavLink className={({ isActive }) =>
-                    `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-400 text-gray-600 hover:bg-gray-100'
+                    `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-300 text-gray-300 hover:bg-gray-100'
                     }`} to='/addrecipe'>Add Recipe</NavLink></li>
                 <li><NavLink className={({ isActive }) =>
-                    `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-400 text-gray-600 hover:bg-gray-100'
+                    `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-300 text-gray-300 hover:bg-gray-100'
                     }`} to='/myrecipes'> My Recipes</NavLink></li>
                 <li><NavLink className={({ isActive }) =>
-                    `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-400 text-gray-600 hover:bg-gray-100'
+                    `block px-2 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-50  text-blue-500' : 'dark:text-gray-300 text-gray-300 hover:bg-gray-100'
                     }`} to='/dashboard'> Dashboard</NavLink></li>
             </>
         }
@@ -58,7 +58,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar sticky top-0 z-1000  shadow-md md:px-8 lg:px-12 bg-transparent backdrop-blur-2xl">
+        <div className="navbar sticky top-0 z-1000  shadow-md md:px-8 lg:px-12 bg-blue-900 backdrop-blur-2xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost mr-2 lg:hidden">
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <NavLink to='/' className="text-xl lg:text-2xl flex-1 font-bold"><div className=" mr-16 font-bold flex items-center gap-1">
                     <span className="text-amber-600">🔥</span>
                     <span className="text-blue-600">Stove</span>
-                    <span className="text-gray-500 dark:text-gray-300">Stories</span>
+                    <span className="text-gray-300 dark:text-gray-300">Stories</span>
                 </div></NavLink>
             </div>
             <div className="navbar-center hidden text-xs lg:flex">

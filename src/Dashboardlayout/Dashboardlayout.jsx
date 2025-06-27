@@ -57,7 +57,7 @@ const DashboardLayout = () => {
 
             {/* Sidebar Header */}
             <header>
-              <h1 className="text-2xl font-bold text-gray-900 pt-5">Dashboard Menu</h1>
+              <h1 className="text-2xl font-bold dark:text-gray-300 text-gray-900 pt-5">Dashboard Menu</h1>
             </header>
 
             {/* User Info */}
@@ -68,8 +68,8 @@ const DashboardLayout = () => {
                 className="w-14 h-14 rounded-full object-cover shadow-sm"
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">{user?.displayName || 'Guest'}</h3>
-                <p className="text-sm text-gray-600 truncate">{user?.email || 'No email'}</p>
+                <h3 className="text-lg font-semibold dark:text-gray-100 text-gray-900">{user?.displayName || 'Guest'}</h3>
+                <p className="text-sm dark:text-gray-300 text-gray-600 truncate">{user?.email || 'No email'}</p>
               </div>
             </div>
 
